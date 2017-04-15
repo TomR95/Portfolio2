@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.london1
+{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    
+}
+header {
+    background-color: white;
+    width: 100%;
+    height: 8px;
+}
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*--- Start navigation--*/
+nav {
+    float: right;
+    padding: 1px 9px 0px 0px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+nav ul li{
+    font-family: 'Raleway' sans-serif;
+    font-size: 135%;
+    /* Added margin 0 auto to try and fix center issue */
+    margin: 0 auto;
+    font-weight: normal;
+    display: inline-block;
+    float: left;
+    padding: 15px;
+}
+nav ul li a {
+    color: darkgrey;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #C3D7DF;
+    text-decoration: underline;
+}
+.current {
+    color: black;
+}
+/*-- END Navigation --*/
+#tablet2 {
+    float: right;
+}
+h2 {
+    color: darkgray;
+}
+h3 {
+    color: darkgray;
+}
+p {
+    color: darkgray;
+}
+aside {
+    float: right;
+    margin: -600px 250px 5px 5px ;
+    width: auto;
+    height: auto;
+    text-align: center;
+}

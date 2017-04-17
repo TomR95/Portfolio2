@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 * {
     margin: 0;
     padding: 0;
@@ -6,20 +6,11 @@
 }
 body {
     background-color: white;
-    font-family: 'Raleway', sans-serif;
+    background-image: url(img/london1.png);
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
 }
-.london1
-{
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    
-}
-header {
-    background-color: white;
-    width: 100%;
-    height: 8px;
-}
+
 #header-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -34,7 +25,7 @@ ul {
     list-style-type: none;
 }
 nav ul li{
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Rubik' sans-serif;
     font-size: 135%;
     /* Added margin 0 auto to try and fix center issue */
     margin: 0 auto;
@@ -69,8 +60,118 @@ p {
 }
 aside {
     float: right;
-    margin: -600px 250px 5px 5px ;
+    margin: 500px -500px 5px 5px ;
     width: auto;
     height: auto;
     text-align: center;
+}
+.social {
+    width: 24px;
+    height: auto;
+}
+/*-- END OF MY CODE --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- START OF CHEVRON CODE --*/
+
+.container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #2F4F4F;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 25px;
+  margin-left: 205px;
+  font-family: "Raleway", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #2F4F4F;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
 }
